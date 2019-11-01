@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gbk">
+    <title>与小仙在一起的第****天</title>
+    <meta name="keywords" content="小仙的个人博客" />
+    <meta name="description" content="仙儿的个人博客，一位小仙女" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/m.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/modernizr.js"></script>
+    <![endif]-->
+  </head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html">来自程序员的浪漫~</a></div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">主页</a></li>
+        <li><a href="share.html">点我看私密照~~</a></li>
+<!--        <li><a href="list.html">生活点滴</a></li>-->
+<!--        <li><a href="about.html">关于你</a></li>-->
+        <li><a href="gbook.html">敢不敢动！？</a></li>
+
+      </ul>
+  </nav>
+  <script>
+window.onload = function ()
+{
+var obj=null;
+var As=document.getElementById('nav').getElementsByTagName('a');
+obj = As[0];
+for(i=1;i<As.length;i++){if(window.location.href.indexOf(As[i].href)>=0)
+obj=As[i];}
+obj.id='selected'
+}
+</script> 
+</header>
+<div class="mnav">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="share.html">相册</a></li>
+      <li><a href="list.html">日记</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="gbook.html">留言</a></li>
+      <li><a href="info.html">内容页</a></li>
+      <li><a href="infopic.html">内容页</a></li>
+    </ul>
+  </div>
+<article>
+  <div class="picbox">
+    <ul>
+      <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src="photo/11.jpg"></i>
+        <div class="picinfo">
+          <h3>2019年6月12日</h3>
+          <span>kawasan~小弱鸡，你没有跳瀑布吧，我以为游乐园你也不敢玩呢，没想到，5个月纪念日也相当不错呢</span> </div>
+        </a></li>
+
+    </ul>
+    <ul>
+      <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src="photo/13.jpg"></i>
+        <div class="picinfo">
+          <h3>2019年7月15日</h3>
+          <span>24岁难忘的生日，谢谢你</span> </div>
+        </a></li>
+
+    </ul>
+    <ul>
+      <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src="photo/12.jpg"></i>
+        <div class="picinfo">
+          <h3>2019年7月12日</h3>
+          <span>故意没跟生日弄到一天的，哈哈，虽然食物一般，但人不错</span> </div>
+        </a></li>
+
+    </ul>
+    <ul>
+      <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src="photo/14.jpg"></i>
+        <div class="picinfo">
+          <h3>2019年6月1日</h3>
+          <span>嗯，整挺好~</span> </div>
+        </a></li>
+
+    </ul>
+  </div>
+  <div class="pagelist"><a class="allpage"><b>99</b></a>&nbsp;&nbsp;<a href="#" class="curPage">1</a>&nbsp;&nbsp;<a href="#" onclick="page(2)">2</a>&nbsp;&nbsp;<a href="#" onclick="page(3)">3</a>&nbsp;&nbsp;<a href="#" onclick="page(4)">4</a>&nbsp;&nbsp;<a href="#" onclick="page(5)">5</a>&nbsp;&nbsp;<a href="#" onclick="page(6)">6</a>&nbsp;&nbsp;<a href="#" onclick="page(7)">7</a>&nbsp;&nbsp;<a href="#" onclick="page(8)">8</a>&nbsp;&nbsp;<a href="#" onclick="page(9)">9</a>&nbsp;&nbsp;<a href="#" onclick="page(2)">下一页</a></div>
+</article>
+<footer>
+  <p>Design by <a href="http://www.yangqq.com" target="_blank">杨青个人博客</a> <a href="/">蜀ICP备11002373号-1</a></p>
+</footer>
+<script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	};
+</script>
+</body>
+</html>
